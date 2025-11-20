@@ -9,7 +9,7 @@ const Hero = () => {
                     Code. Architecture. Leadership.
                 </p>
                 <h1 style=${{ fontSize: '4.5rem', marginBottom: '1rem' }}>
-                    Vikas Kulkarni 000 
+                    Vikas Kulkarni 
                 </h1>
                 <h2 style=${{ fontSize: '1.8rem', color: '#ccc', fontWeight: '300', marginBottom: '2rem' }}>
                     Hands-on Principal Programmer | Engineering Leader | Problem Solver
