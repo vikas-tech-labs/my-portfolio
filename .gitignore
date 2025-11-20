@@ -1,0 +1,14 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python (if used for server)
+__pycache__/
+*.py[cod]
+
+# Node (if used in future)
+node_modules/
+.env
