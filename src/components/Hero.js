@@ -12,10 +12,13 @@ const Hero = () => {
                     Vikas Kulkarni 
                 </h1>
                 <h2 style=${{ fontSize: '1.8rem', color: '#ccc', fontWeight: '300', marginBottom: '2rem' }}>
-                    Hands-on Principal Programmer | Engineering Leader | Problem Solver
+                    Hands-on Programmer | Technology Consultant | Problem Solver
                 </h2>
                 <p style=${{ maxWidth: '800px', margin: '0 auto 2.5rem', color: '#e0e0e0', fontSize: '1.2rem', lineHeight: '1.6' }}>
-                    I believe <span style=${{ color: '#00f2ff', fontWeight: '600', textShadow: '0 0 10px rgba(0, 242, 255, 0.3)' }}>a well-defined problem is half the solution</span>. I don't just design systems; I build them alongside my teams. Combining deep technical expertise with strategic leadership to turn ambiguous challenges into scalable, resilient software.
+                    <span style=${{ color: '#00f2ff', fontWeight: '600', textShadow: '0 0 10px rgba(0, 242, 255, 0.3)' }}>
+                    "A well-defined problem is half the solution"</span>. 
+                    <br/>
+                    This principle shapes my engineering approach—starting with precise problem framing, technical decomposition, and clear system objectives. With that foundation, complex challenges can be translated into scalable, resilient architectures supported by hands-on, production-grade engineering.
                     <br/>
                     <span style=${{ color: 'var(--accent-secondary)', fontSize: '1rem', marginTop: '1.5rem', display: 'block', fontWeight: '600' }}>
                         45% Cost Reduction • 99.9% Uptime • 3 Enterprise Migrations
