@@ -10,15 +10,6 @@ const Articles = () => {
             date: "Nov 2025",
             platform: "Medium",
             tags: ["AWS", "DevSecOps", "Terraform"]
-        },
-        // Placeholder for future articles
-        {
-            title: "Architecting for High Availability",
-            summary: "Strategies for designing resilient distributed systems that can withstand regional failures and traffic spikes.",
-            link: "#",
-            date: "Coming Soon",
-            platform: "Blog",
-            tags: ["Architecture", "Cloud", "Resilience"]
         }
     ];
 
@@ -58,6 +49,9 @@ const Articles = () => {
                         </div>
                     `)}
                 </div>
+                <p style=${{ marginTop: '2rem', color: '#aaa' }}>
+                    More posts on AI, architecture and learning in public on <a href="https://www.linkedin.com/in/vikas-kulkarni-82802b57/recent-activity/all/" target="_blank" style=${{ color: 'var(--accent-primary)' }}>LinkedIn →</a>
+                </p>
             </div>
         </section>
     `;

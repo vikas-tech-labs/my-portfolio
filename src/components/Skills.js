@@ -1,56 +1,30 @@
 import React from 'react';
 import { html } from '../utils.js';
 
+const groups = [
+    { title: "Languages", items: ["Python", "TypeScript", "C#", "Java", "SQL"] },
+    { title: "Cloud & Serverless", items: ["AWS", "Google Cloud (GCP)", "Lambda", "Step Functions", "EventBridge", "Cloudflare Workers", "Kubernetes (EKS, GKE)", "Docker", "Terraform"] },
+    { title: "Backend & Data", items: [".NET 8 / .NET Core", "Spring Boot", "REST & HMAC-signed APIs", "Kafka", "RabbitMQ", "Aurora MySQL", "PostgreSQL", "AlloyDB", "SQL Server", "MongoDB"] },
+    { title: "Frontend & Commerce", items: ["Angular", "Preact", "Micro-frontends", "Shopify Checkout & UI Extensions"] },
+    { title: "AI & LLM", items: ["Anthropic Claude", "Model Context Protocol (MCP)", "Natural-language-to-SQL", "AI Agents"] },
+    { title: "Architecture & Practices", items: ["Distributed Systems", "Event-Driven Architecture", "Microservices", "System Design", "Edge APIs & Caching", "Cloud Cost Optimization"] },
+    { title: "DevOps, Security & Observability", items: ["GitHub Actions", "CI/CD", "OAuth / Auth0", "JWT", "Datadog", "Dash0", "Grafana", "Veracode"] }
+];
+
 const Skills = () => {
     return html`
         <section id="skills" className="section">
             <div className="container">
                 <h2 className="section-title">Technical Skills</h2>
                 <div className="skills-grid">
-                    <div className="glass-card skill-category">
-                        <h3>Cloud & Infrastructure</h3>
-                        <div className="skill-tags">
-                            <span className="skill-tag">AWS</span>
-                            <span className="skill-tag">Google Cloud (GCP)</span>
-                            <span className="skill-tag">Azure</span>
-                            <span className="skill-tag">Kubernetes (EKS, GKE)</span>
-                            <span className="skill-tag">Docker</span>
-                            <span className="skill-tag">Terraform</span>
-                            <span className="skill-tag">NGINX</span>
+                    ${groups.map(g => html`
+                        <div className="glass-card skill-category">
+                            <h3>${g.title}</h3>
+                            <div className="skill-tags">
+                                ${g.items.map(i => html`<span className="skill-tag">${i}</span>`)}
+                            </div>
                         </div>
-                    </div>
-                    <div className="glass-card skill-category">
-                        <h3>Backend & API</h3>
-                        <div className="skill-tags">
-                            <span className="skill-tag">.NET 6.0/8.0</span>
-                            <span className="skill-tag">.NET Core</span>
-                            <span className="skill-tag">C#</span>
-                            <span className="skill-tag">ASP.NET</span>
-                            <span className="skill-tag">Kafka</span>
-                            <span className="skill-tag">RabbitMQ</span>
-                            <span className="skill-tag">Entity Framework</span>
-                        </div>
-                    </div>
-                    <div className="glass-card skill-category">
-                        <h3>DevOps & Security</h3>
-                        <div className="skill-tags">
-                            <span className="skill-tag">GitHub Actions</span>
-                            <span className="skill-tag">CI/CD</span>
-                            <span className="skill-tag">OAuth/Auth0</span>
-                            <span className="skill-tag">JWT</span>
-                            <span className="skill-tag">Datadog</span>
-                            <span className="skill-tag">Veracode</span>
-                        </div>
-                    </div>
-                    <div className="glass-card skill-category">
-                        <h3>Architecture</h3>
-                        <div className="skill-tags">
-                            <span className="skill-tag">Microservices</span>
-                            <span className="skill-tag">Event-Driven (EDA)</span>
-                            <span className="skill-tag">Distributed Systems</span>
-                            <span className="skill-tag">System Design</span>
-                        </div>
-                    </div>
+                    `)}
                 </div>
             </div>
         </section>

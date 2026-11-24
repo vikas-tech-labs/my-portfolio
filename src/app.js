@@ -20,6 +20,7 @@ const App = () => {
             <${Header} />
             <${Hero} />
             <${About} />
+            <${Projects} />
             <${Experience} />
             <${Skills} />
             <${Certifications} />
