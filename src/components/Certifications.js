@@ -27,7 +27,7 @@ const Certifications = () => {
         <section id="certifications" className="section">
             <div className="container">
                 <h2 className="section-title">Certifications</h2>
-                <div className="grid" style=${{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+                <div className="grid" style=${{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(300px, 100%), 1fr))' }}>
                     ${certs.map(cert => html`
                         <div className="glass-card cert-card" style=${{
             borderLeft: `4px solid ${cert.color}`,
