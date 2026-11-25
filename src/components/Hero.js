@@ -9,25 +9,25 @@ const Hero = () => {
                     Code. Architecture. Leadership.
                 </p>
                 <h1>
-                    Vikas Kulkarni 
+                    Vikas Kulkarni
                 </h1>
                 <h2 className="hero-subheading">
-                    Hands-on Programmer | Technology Consultant | Problem Solver
+                    Staff Software Engineer | Distributed Systems & Cloud Architecture
                 </h2>
                 <p className="hero-description">
                     <span className="hero-highlight">
-                    "A well-defined problem is half the solution"</span>. 
+                    "A well-defined problem is half the solution"</span>.
                     <br/>
-                    This principle shapes my engineering approach—starting with precise problem framing, technical decomposition, and clear system objectives. With that foundation, complex challenges can be translated into scalable, resilient architectures supported by hands-on, production-grade engineering.
+                    I design and build the platforms behind modern commerce, from checkout to the warehouse floor to the box on a customer's doorstep. I start with precise problem framing, make the architecture call, and stay hands-on to ship it.
                     <br/>
                     <span className="hero-stats">
-                        45% Cost Reduction • 99.9% Uptime • 3 Enterprise Migrations
+                        18+ Years • 43% AWS Cost Reduction • 70% Fewer Inventory Mismatches • 25–30% Faster Picking
                     </span>
                 </p>
                 <div className="hero-buttons">
-                    <a href="#contact" className="btn">Get In Touch</a>
-                    <a href="#experience" className="btn btn-outline">
-                        View Experience
+                    <a href="#work" className="btn">View My Work</a>
+                    <a href="resume.pdf" target="_blank" className="btn btn-outline">
+                        Download Resume
                     </a>
                 </div>
             </div>

@@ -1,23 +1,33 @@
 import React from 'react';
 import { html } from '../utils.js';
 
+const stats = [
+    { value: '18+', label: 'Years Experience', color: 'var(--accent-secondary)' },
+    { value: '43%', label: 'AWS Cost Reduction', color: 'var(--accent-primary)' },
+    { value: '70%', label: 'Fewer Inventory Mismatches', color: 'var(--accent-secondary)' },
+    { value: '60→7', label: 'Minutes per Parcel Audit Import', color: 'var(--accent-primary)' }
+];
+
 const About = () => {
     return html`
         <section id="about" className="section">
             <div className="container">
                 <h2 className="section-title">About Me</h2>
-                
+
                 <div className="glass-card" style=${{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-                    
+
                     <div className="about-intro">
                         <h3 style=${{ fontSize: '1.8rem', marginBottom: '1rem', color: 'var(--accent-primary)' }}>
-                            Architecting the Future of Cloud Logistics
+                            Building Commerce, Fulfillment & Logistics Platforms
                         </h3>
                         <p style=${{ fontSize: '1.1rem', lineHeight: '1.8', marginBottom: '1.5rem', color: '#e0e0e0' }}>
-                            Building resilient systems requires more than just code; it demands clear vision and empowered teams. With over <strong>17 years</strong> of experience, I specialize in guiding engineering organizations through complex cloud transformations, turning legacy challenges into scalable opportunities.
+                            I'm a <strong>Staff Software Engineer at Stord</strong> with <strong>18+ years</strong> in software engineering and architecture. I lead engineering teams across three products, Unbox, International Checkout and Shipment Protection, set architecture direction across 3–5 squads, and stay hands-on in Python, TypeScript, .NET and Java.
+                        </p>
+                        <p style=${{ fontSize: '1.1rem', lineHeight: '1.8', marginBottom: '1.5rem', color: '#ccc' }}>
+                            Before Stord, I led the modernization of Pitney Bowes' warehouse systems and worked side by side with warehouse teams to fix real problems on the floor. Earlier, I built trading and equity award platforms at Charles Schwab.
                         </p>
                         <p style=${{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ccc' }}>
-                            My focus is on aligning <strong>technical strategy</strong> with <strong>business goals</strong>. By fostering a culture of engineering excellence and automation, I help teams deliver high-velocity solutions—from slashing cloud costs by 45% to ensuring zero downtime during critical peaks. It's about creating platforms that enable the business to thrive.
+                            <strong>How I work:</strong> I make the architecture call and then help build it. I write design docs people actually use, turn business problems into systems that hold up at peak, and grow engineers into tech leads.
                         </p>
                     </div>
 
@@ -29,22 +39,12 @@ const About = () => {
             borderTop: '1px solid var(--glass-border)',
             paddingTop: '2rem'
         }}>
-                        <div className="stat-item" style=${{ textAlign: 'center' }}>
-                            <div style=${{ fontSize: '2.5rem', fontWeight: '800', color: 'var(--accent-secondary)' }}>17+</div>
-                            <div style=${{ color: '#aaa', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Years Experience</div>
-                        </div>
-                        <div className="stat-item" style=${{ textAlign: 'center' }}>
-                            <div style=${{ fontSize: '2.5rem', fontWeight: '800', color: 'var(--accent-primary)' }}>3</div>
-                            <div style=${{ color: '#aaa', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Cloud Migrations</div>
-                        </div>
-                        <div className="stat-item" style=${{ textAlign: 'center' }}>
-                            <div style=${{ fontSize: '2.5rem', fontWeight: '800', color: 'var(--accent-secondary)' }}>45%</div>
-                            <div style=${{ color: '#aaa', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Cost Reduction</div>
-                        </div>
-                        <div className="stat-item" style=${{ textAlign: 'center' }}>
-                            <div style=${{ fontSize: '2.5rem', fontWeight: '800', color: 'var(--accent-primary)' }}>99.9%</div>
-                            <div style=${{ color: '#aaa', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Uptime Delivered</div>
-                        </div>
+                        ${stats.map(s => html`
+                            <div className="stat-item" style=${{ textAlign: 'center' }}>
+                                <div style=${{ fontSize: '2.5rem', fontWeight: '800', color: s.color }}>${s.value}</div>
+                                <div style=${{ color: '#aaa', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>${s.label}</div>
+                            </div>
+                        `)}
                     </div>
 
                 </div>
