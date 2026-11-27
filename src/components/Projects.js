@@ -7,7 +7,7 @@ const caseStudies = [
         org: "Stord · Current, team of 4",
         problem: "Brands wanted every shipped box to become a marketing channel: a printed card with the buyer's name, order details and a QR discount code that brings them back to buy again.",
         approach: "The OMS fans orders out to downstream services. Orders that match a live campaign flow into an event-driven pipeline on AWS Lambda, Step Functions and EventBridge. The WMS then triggers printing of the custom insert at label-print time on dedicated warehouse printers, and won't release a shipment that's missing its insert.",
-        result: "One of Stord's top revenue products, with dashboards showing brands which campaigns drove repeat orders. Now extending it with Direct Insert: campaigns mailed to consumers without an order.",
+        result: "A core commerce product used by Stord's brand customers, with dashboards showing brands which campaigns drove repeat orders.",
         tech: ["Python", "AWS Lambda", "Step Functions", "EventBridge", "Aurora MySQL", "AWS IoT Core", "MQTT"]
     },
     {
@@ -47,7 +47,7 @@ const caseStudies = [
         org: "Stord",
         problem: "A legacy SQL Server parcel audit system took an hour per import and slowed revenue recovery.",
         approach: "Replaced cursor-based logic with set-based, concurrency-safe operations.",
-        result: "Import time cut from 60 to 7 minutes (~88%), and parcel-level revenue recovery 40% faster on $750M+ in shipments.",
+        result: "Import time cut from 60 to 7 minutes (~88%), and parcel-level revenue recovery 40% faster on high-volume parcel spend.",
         tech: ["SQL Server", "T-SQL", "Performance tuning"]
     }
 ];

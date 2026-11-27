@@ -8,7 +8,7 @@ const jobs = [
         date: "Sept 2024 – Present",
         summary: "Lead engineering teams of 4 across Stord's commerce products and set architecture direction across 3–5 squads, while staying hands-on in Python, TypeScript, .NET and Java.",
         points: [
-            "Lead Stord Unbox, an event-driven Python platform on AWS (Lambda, Step Functions, EventBridge) for personalized insert campaigns. One of Stord's top revenue products.",
+            "Lead Stord Unbox, an event-driven Python platform on AWS (Lambda, Step Functions, EventBridge) for personalized insert campaigns. A core commerce product used by Stord's brand customers.",
             "Designed a centralized address validation API on Cloudflare Workers with a KV cache, replacing three separate integrations with a paid provider.",
             "Led International Checkout (duty and tax, HS code classification) and Shipment Protection on Shopify Checkout UI extensions and edge APIs.",
             "Cut AWS spend 43% across 12 services (40+ workloads) and migrated Pro-Pack Logistics' 7 apps to Google Cloud.",
